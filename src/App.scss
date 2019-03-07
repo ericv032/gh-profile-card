@@ -24,10 +24,14 @@ h1 {
   font-size: 230%;
   text-transform: uppercase;
 }
+p {
+  font-weight: 300;
+  color: $light-gray;
+}
 
 .card {
   background-color:$white;
-  width:500px;
+  max-width:500px;
   margin:100px auto;
   padding-top:50px;
   text-align:center;
@@ -74,4 +78,20 @@ figure img {
 .profile-info a {
   color:$white;
   text-decoration:none;
+}
+footer {
+  background-color: $light-gray;
+  padding:10px 0;
+  p {
+    color:#999;
+  }
+}
+
+@media screen and (max-width:600px) {
+  p {
+    font-size:80%;
+  }
+  .profile-info li {
+   margin-right:30px;
+  }
 }

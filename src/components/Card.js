@@ -61,30 +61,31 @@ class Card extends Component {
               <section className="card">
                 <div>
                   <figure>
-                <a href={data.homeUrl} target="new" title={data.name || data.username}><img src={data.avatar} alt={data.username}/></a>
+                <a href={data.homeUrl} target="blank" title={data.name || data.username}><img src={data.avatar} alt={data.username}/></a>
                   </figure>
                   <div className="profile-name">
-                  <h1><a href={data.homeUrl} target="new" title={data.username}>{data.name || data.username}</a></h1>
+                  <h1><a href={data.homeUrl} target="blank" title={data.username}>{data.name || data.username}</a></h1>
                   </div>
                 </div> 
                 <div className="profile-info">
                   <ul>
                      <li>
-                        <a href={followers} target="new"><i>{data.followers}</i><span>Followers</span></a>
+                        <a href={followers} target="blank"><i>{data.followers}</i><span>Followers</span></a>
                      </li>
                      <li>
-                        <a href={repositories} target="new"><i>{data.repos}</i><span>Repositories</span></a>
+                        <a href={repositories} target="blank"><i>{data.repos}</i><span>Repositories</span></a>
                      </li>
                      <li>
                         <a href={following} target="new"><i>{data.following}</i><span>Following</span></a>
                      </li>
                   </ul>
                 </div>
+                <footer>
+                <p>This project was developed using <a href="https://reactjs.org/">React</a>. See the code on <a href="https://github.com/ericv032/" target="new">Github.</a></p></footer>       
               </section>
+             
             );
         }
       }
-
-  
 
 export default Card;
