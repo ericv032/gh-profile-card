@@ -81,7 +81,7 @@ class Card extends Component {
                   </ul>
                 </div>
                 <footer>
-                <p>This project was developed using <a href="https://reactjs.org/">React</a>. See the code on <a href="https://github.com/ericv032/" target="new">Github.</a></p></footer>       
+                <p>This project was developed using <a href="https://reactjs.org/">React</a>. See the code on <a href="https://github.com/ericv032/gh-profile-card" target="new">Github.</a></p></footer>       
               </section>
              
             );
